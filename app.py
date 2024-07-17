@@ -106,7 +106,6 @@ while True:
         save_book_file.save_books_borrowed(book_list_borrowed)
         print("\n Books saved successfully!")
     elif choice == "10":
-        pass
         book_list = reset_system_file.reset_book_list(book_list)
         book_list_borrowed = reset_system_file.reset_book_list_borrowed(
             book_list_borrowed
