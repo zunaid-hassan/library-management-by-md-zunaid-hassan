@@ -7,5 +7,5 @@
 
 ---
 ## Instructions
-1. Run the `app.py` file from the Terminal/Command Line Interface
-2. View system architecture file **Architecture.png**
+1. View system architecture file **Architecture.png**
+2. Run the `app.py` file from the Terminal/Command Line Interface
