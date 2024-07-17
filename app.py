@@ -23,35 +23,6 @@ book_list_borrowed = []
 load_book_list_file.load_book_list(book_list)
 load_book_list_file.load_book_list_borrowed(book_list_borrowed)
 
-
-def update_book():
-    # Select
-
-    found_search_result = False
-
-    search_term = input("Enter name to update: ")
-    for index, book in enumerate(book_list):
-        if search_term.lower() in book["name"].lower():
-            found_search_result = True
-            print(f"{index+1}. {book['name']} - {book['phone']}")
-
-    if not found_search_result:
-        print("No item found")
-        return
-
-    selected_index = int(input("Enter a book to update: "))
-
-    new_name = input("Enter new name: ")
-    new_phone = input("Enter new phone number: ")
-    new_email = input("Enter new email: ")
-
-    book_list[selected_index - 1].update(
-        {"name": new_name, "phone": new_phone, "email": new_email}
-    )
-
-    print("book successfully updated!")
-
-
 print(
     messages_file.hello_message, messages_file.welcome_message, messages_file.book_art
 )
@@ -76,8 +47,7 @@ while True:
     elif choice == "6":
         book_list = remove_book_file.remove_book(book_list)
     elif choice == "7":
-        pass
-        # book_list, book_list_borrowed = lend_book_file.lend_book(book_list, book_list_borrowed)
+        book_list_borrowed = lend_book_file.lend_book(book_list_borrowed)
     elif choice == "8":
         pass
         # book_list, book_list_borrowed = return_book_file.return_book(book_list, book_list_borrowed)
