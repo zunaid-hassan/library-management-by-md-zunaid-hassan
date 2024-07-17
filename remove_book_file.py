@@ -9,7 +9,7 @@ def remove_book(book_list):
     for index, book in enumerate(book_list):
         if search_term.lower() in book["title"].lower():
             found_search_result = True
-            print(f"* {index+1}. {book['title']} - {book['author(s)']}")
+            print(f"* {index+1}. {book['title']} by {book['author(s)']}")
 
     if not found_search_result:
         print(
