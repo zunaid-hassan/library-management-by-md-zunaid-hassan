@@ -35,7 +35,8 @@ def reset_book_list_borrowed(book_list_borrowed):
             # print("line splitted: ", repr(line_splitted))
             book = {
                 "title": line_splitted[0],
-                "borrower": line_splitted[1],
+                "author(s)": line_splitted[1],
+                "borrower": line_splitted[2],
             }
             book_list_borrowed.append(book)
 

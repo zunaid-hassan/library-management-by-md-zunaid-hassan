@@ -25,7 +25,8 @@ def load_book_list_borrowed(book_list_borrowed):
             line_splitted = line.strip().split(",")
             book = {
                 "title": line_splitted[0],
-                "borrower": line_splitted[1],
+                "author(s)": line_splitted[1],
+                "borrower": line_splitted[2],
             }
             book_list_borrowed.append(book)
     return book_list_borrowed
