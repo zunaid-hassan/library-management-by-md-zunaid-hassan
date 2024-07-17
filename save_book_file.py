@@ -20,7 +20,7 @@ def save_books_borrowed(book_list_borrowed):
     with open("books_list_borrowed.csv", "wt") as file_pointer:
         for book in book_list_borrowed:
 
-            line = f"{book['title']},{book['borrower']}\n"
+            line = f"{book['title']},{book['author(s)']},{book['borrower']}\n"
             file_pointer.write(line)
             # print(line)
 
