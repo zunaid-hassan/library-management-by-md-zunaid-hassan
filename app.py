@@ -17,31 +17,31 @@ import messages_file
 import save_book_file
 
 book_list = [
-    {
-        "title": "Harry Potter 1",
-        "author(s)": "J. K. Rowling",
-        "ISBN": "1338878921",
-        "publishing_year": "1998",
-        "price": 15.00,
-        "quantity": 5,
-    },
-    {
-        "title": "Harry Potter 2",
-        "author(s)": "J. K. Rowling",
-        "ISBN": "4390648742",
-        "publishing_year": "2000",
-        "price": 16.00,
-        "quantity": 2,
-    },
+    # {
+    #     "title": "Harry Potter 1",
+    #     "author(s)": "J. K. Rowling",
+    #     "ISBN": "1338878921",
+    #     "publishing_year": "1998",
+    #     "price": 15.00,
+    #     "quantity": 5,
+    # },
+    # {
+    #     "title": "Harry Potter 2",
+    #     "author(s)": "J. K. Rowling",
+    #     "ISBN": "4390648742",
+    #     "publishing_year": "2000",
+    #     "price": 16.00,
+    #     "quantity": 2,
+    # },
 ]
-
-# load_book_list_file.load_book_list(book_list)
-# load_book_list_file.load_book_list_borrowed(book_list_borrowed)
 
 book_list_borrowed = [
-    {"title": "Himu 1", "borrower": "Ostad"},
-    {"title": "Himu 2", "borrower": "Sumon"},
+    #     {"title": "Himu 1", "borrower": "Ostad"},
+    #     {"title": "Himu 2", "borrower": "Sumon"},
 ]
+
+load_book_list_file.load_book_list(book_list)
+load_book_list_file.load_book_list_borrowed(book_list_borrowed)
 
 
 def update_book():
