@@ -12,7 +12,7 @@ def search_books_author(book_list):
     search_term = str(input("\n>> Enter author name: "))
     
     for book in book_list:
-        if search_term.lower() in book["title"].lower() or search_term in book["ISBN"]:
+        if search_term.lower() in book["author(s)"].lower():
             print("""
  ========================
  ||    Found books     ||  
