@@ -47,7 +47,7 @@ while True:
     elif choice == "6":
         book_list = remove_book_file.remove_book(book_list)
     elif choice == "7":
-        book_list_borrowed = lend_book_file.lend_book(book_list_borrowed)
+        lend_book_file.lend_book(book_list, book_list_borrowed)
     elif choice == "8":
         pass
         # book_list, book_list_borrowed = return_book_file.return_book(book_list, book_list_borrowed)
