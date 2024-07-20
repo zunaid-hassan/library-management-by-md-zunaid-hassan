@@ -29,7 +29,7 @@ def remove_book(book_list):
         if 0 < selected_index < len(book_list) + 1:
             print(f"\n Book removed successfully:\n * {book_list[selected_index - 1]["title"]} by {book_list[selected_index - 1]["author(s)"]}")
             book_list.pop(selected_index - 1)          
-            save_book_file.save_books(book_list)
+            # save_book_file.save_books(book_list)
             return book_list
         else:
             print(

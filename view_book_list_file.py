@@ -13,8 +13,8 @@ def view_book_list(book_list):
     for book in book_list:
         print(
             " " + str(number),
-            "Title: " + book["title"],
-            "Author(s): " + book["author(s)"],
+            "Title: " + str(book["title"]),
+            "Author(s): " + str(book["author(s)"]),
             "ISBN: " + str(book["ISBN"]),
             "Publication year: " + str(book["publishing_year"]),
             "Price ($): " + str(book["price"]),

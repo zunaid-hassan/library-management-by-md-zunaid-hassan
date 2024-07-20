@@ -10,9 +10,9 @@ def load_book_list(book_list):
                 "title": line_splitted[0],
                 "author(s)": line_splitted[1],
                 "ISBN": line_splitted[2],
-                "publishing_year": line_splitted[3],
-                "price": line_splitted[4],
-                "quantity": line_splitted[5],
+                "publishing_year": int(line_splitted[3]),
+                "price": float(line_splitted[4]),
+                "quantity": int(line_splitted[5]),
             }
             book_list.append(book)
 
