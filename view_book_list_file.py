@@ -21,5 +21,5 @@ def view_book_list(book_list):
             "Quantity: " + str(book["quantity"]),
             sep=" | ",
         )
-        print("-" * 106)
+        print("-" * 140)
         number += 1
