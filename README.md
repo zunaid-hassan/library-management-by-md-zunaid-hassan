@@ -3,7 +3,7 @@
 
 **Assignment 2**: Library Management System
 
-**Prepared by**: Md Zunaid Hassan, zunaid.hassan.t@gmail.com, 01827401503
+**Prepared by**: Md Zunaid Hassan
 
 ---
 ## Instructions
